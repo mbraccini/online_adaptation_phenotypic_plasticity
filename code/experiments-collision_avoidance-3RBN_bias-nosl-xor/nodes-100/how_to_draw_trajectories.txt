@@ -1,0 +1,20 @@
+Set random seed in run-collision_avoidance_trajectory.argos (and possibly the length of the experiment)
+
+Set bias at the beginning of the file collision_avoidance_trajectory.lua
+
+
+
+Run the following commands:
+
+
+argos3 -c run-collision_avoidance_trajectory.argos > output.txt
+cat output.txt | grep pos | tr ',' '.' > traj.txt
+
+(This will produce a file with x,y coordinates every step. The file is named traj.txt. With this command all the positions of the robot are collected and so the resulting trajectory is the compound of all the adaptive history. In case, a specific group of lines can be selected and the resulting trajectory can be drawn.)
+
+
+R --no-save < draw_trajectory.R
+
+(This will produce a pdf file with the trajectory. The file is named trajectory.pdf)
+
+Some example of trajectories are provided in the files trajectory-xyz.pdf

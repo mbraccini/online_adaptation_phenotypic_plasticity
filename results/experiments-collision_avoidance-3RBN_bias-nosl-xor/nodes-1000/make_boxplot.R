@@ -1,0 +1,8 @@
+chaotic <- read.table('res_chaotic.txt')
+critical0 <- read.table('res_critical0.txt')
+critical1 <- read.table('res_critical1.txt')
+ordered1 <- read.table('res_ordered1.txt')
+ordered0 <- read.table('res_ordered0.txt')
+pdf('boxplot.pdf')
+boxplot(ordered0[,1],critical0[,1],chaotic[,1],critical1[,1],ordered1[,1],names=c(0.1,0.21,0.5,0.79,0.9),ylab='Performance',xlab='Bias',cex.main=1.4,cex.axis=1.4,cex.lab=1.4,main='1000 nodes')
+dev.off()
