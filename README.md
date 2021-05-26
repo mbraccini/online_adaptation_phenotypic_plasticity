@@ -1,4 +1,4 @@
-https://zenodo.org/badge/doi/10.5281/zenodo.4811251.svg
+[](https://zenodo.org/badge/doi/10.5281/zenodo.4811251.svg)
 
 Install ARGoS from: www.argos-sim.info
 
